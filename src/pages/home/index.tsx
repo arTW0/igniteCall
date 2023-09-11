@@ -11,7 +11,7 @@ export default function Home() {
         <Heading size="4xl">
           Agendamentos descomplicados
         </Heading>
-        <Text size="lg">
+        <Text size="xl">
           Conecte seu calendário e permita que as pessoas marquem agendamentos
         </Text>
       </Hero>

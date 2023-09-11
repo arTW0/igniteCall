@@ -6,7 +6,6 @@ export const Container = styled('div', {
   display: 'flex',
   alignItems: 'center',
   gap: '$20',
-  overflow: 'hidden',
 })
 
 export const Hero = styled('div', {
@@ -14,14 +13,22 @@ export const Hero = styled('div', {
   padding: '0 $10',
 
   [`${Heading}`]: {
-
+    '@media(max-width: 600px)': {
+      display: '$6xl',
+    }
   },
 
   [`${Text}`]: {
     marginTop: '$2',
     color: '$gray200',
-    fontSize: '$xl',
   }
 })
 
-export const Preview = styled('div', {})
+export const Preview = styled('div', {
+  paddingRight: '$8',
+  overflow: 'hidden',
+
+  '@media(max-width: 600px)': {
+    display: 'none',
+  }
+})
